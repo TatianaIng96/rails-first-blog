@@ -131,11 +131,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
-<<<<<<< HEAD
-=======
-      racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-linux)
->>>>>>> main
+
       racc (~> 1.4)
     pg (1.4.3)
     public_suffix (5.0.0)
@@ -219,10 +215,6 @@ GEM
 
 PLATFORMS
   ruby
-<<<<<<< HEAD
-=======
-  x86_64-linux
->>>>>>> main
 
 DEPENDENCIES
   bootsnap
