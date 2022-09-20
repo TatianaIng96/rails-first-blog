@@ -12,10 +12,17 @@ checking for sys/resource.h... yes
 creating Makefile
 
 current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nio4r-2.5.8/ext/nio4r
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20220920-58143-8ajh2j sitelibdir\=./.gem.20220920-58143-8ajh2j clean
 
 current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nio4r-2.5.8/ext/nio4r
 make DESTDIR\= sitearchdir\=./.gem.20220920-58143-8ajh2j sitelibdir\=./.gem.20220920-58143-8ajh2j
+=======
+make DESTDIR\= sitearchdir\=./.gem.20220920-42374-apheil sitelibdir\=./.gem.20220920-42374-apheil clean
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20220920-42374-apheil sitelibdir\=./.gem.20220920-42374-apheil
+>>>>>>> main
 compiling bytebuffer.c
 compiling monitor.c
 compiling nio4r_ext.c
@@ -105,5 +112,10 @@ cc1: warning: unrecognized command line option â€˜-Wno-constant-logical-operandâ
 linking shared-object nio4r_ext.so
 
 current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nio4r-2.5.8/ext/nio4r
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20220920-58143-8ajh2j sitelibdir\=./.gem.20220920-58143-8ajh2j install
 /usr/bin/install -m 0755 nio4r_ext.so ./.gem.20220920-58143-8ajh2j
+=======
+make DESTDIR\= sitearchdir\=./.gem.20220920-42374-apheil sitelibdir\=./.gem.20220920-42374-apheil install
+/usr/bin/install -m 0755 nio4r_ext.so ./.gem.20220920-42374-apheil
+>>>>>>> main

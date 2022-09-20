@@ -128,7 +128,11 @@ checked program was:
 /* end */
 
 "gcc -o conftest -I/home/ubuntu/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0/x86_64-linux -I/home/ubuntu/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0/ruby/backward -I/home/ubuntu/.rvm/rubies/ruby-3.0.0/include/ruby-3.0.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/home/ubuntu/.rvm/rubies/ruby-3.0.0/lib -Wl,-rpath,/home/ubuntu/.rvm/rubies/ruby-3.0.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby  -lm   -lc"
+<<<<<<< HEAD
 /usr/bin/ld: /tmp/ccTyvse5.o: en la función `t':
+=======
+/usr/bin/ld: /tmp/ccZmFjwo.o: en la función `t':
+>>>>>>> main
 /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/msgpack-1.5.6/ext/msgpack/conftest.c:17: referencia a `rb_hash_new_capa' sin definir
 collect2: error: ld returned 1 exit status
 checked program was:

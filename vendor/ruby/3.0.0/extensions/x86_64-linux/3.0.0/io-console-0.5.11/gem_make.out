@@ -8,13 +8,25 @@ checking for rb_scheduler_timeout()... no
 creating Makefile
 
 current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/io-console-0.5.11/ext/io/console
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20220920-58143-1i98h2 sitelibdir\=./.gem.20220920-58143-1i98h2 clean
 
 current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/io-console-0.5.11/ext/io/console
 make DESTDIR\= sitearchdir\=./.gem.20220920-58143-1i98h2 sitelibdir\=./.gem.20220920-58143-1i98h2
+=======
+make DESTDIR\= sitearchdir\=./.gem.20220920-42374-iroxst sitelibdir\=./.gem.20220920-42374-iroxst clean
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/io-console-0.5.11/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20220920-42374-iroxst sitelibdir\=./.gem.20220920-42374-iroxst
+>>>>>>> main
 compiling console.c
 linking shared-object io/console.so
 
 current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/io-console-0.5.11/ext/io/console
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20220920-58143-1i98h2 sitelibdir\=./.gem.20220920-58143-1i98h2 install
 /usr/bin/install -m 0755 console.so ./.gem.20220920-58143-1i98h2/io
+=======
+make DESTDIR\= sitearchdir\=./.gem.20220920-42374-iroxst sitelibdir\=./.gem.20220920-42374-iroxst install
+/usr/bin/install -m 0755 console.so ./.gem.20220920-42374-iroxst/io
+>>>>>>> main

@@ -1,10 +1,15 @@
 current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/ext/nokogiri
+<<<<<<< HEAD
 /home/ubuntu/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/ubuntu/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb --use-system-libraries
+=======
+/home/ubuntu/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/ubuntu/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+>>>>>>> main
 checking for whether -std=c99 is accepted as CFLAGS... yes
 checking for whether -Wno-declaration-after-statement is accepted as CFLAGS... yes
 checking for whether -g is accepted as CFLAGS... yes
 checking for whether -Winline is accepted as CFLAGS... yes
 checking for whether -Wmissing-noreturn is accepted as CFLAGS... yes
+<<<<<<< HEAD
 Building nokogiri using system libraries.
 checking for gzdopen() in -lz... yes
 checking for xmlParseDoc() in -lxml2... no
@@ -83,3 +88,107 @@ Cleaning files only used during build.
 current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/ext/nokogiri
 make DESTDIR\= sitearchdir\=./.gem.20220920-65387-w1udyh sitelibdir\=./.gem.20220920-65387-w1udyh install
 /usr/bin/install -m 0755 nokogiri.so ./.gem.20220920-65387-w1udyh/nokogiri
+=======
+Building nokogiri using packaged libraries.
+Static linking is enabled.
+Cross build is disabled.
+/home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/digest-3.1.0/lib/digest.rb:20: warning: already initialized constant Digest::REQUIRE_MUTEX
+/home/ubuntu/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/digest.rb:6: warning: previous definition of REQUIRE_MUTEX was here
+Using mini_portile version 2.8.0
+checking for iconv... yes
+---------- IMPORTANT NOTICE ----------
+Building Nokogiri with a packaged version of libxml2-2.9.14.
+Configuration options: --host\=x86_64-pc-linux-gnu --enable-static --disable-shared --libdir\=/home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/ports/x86_64-linux/libxml2/2.9.14/lib --with-iconv\=yes --disable-dependency-tracking --without-python --without-readline --with-c14n --with-debug --with-threads --disable-shared --enable-static CFLAGS\=-O2\ -U_FORTIFY_SOURCE\ -g\ -fPIC
+The following patches are being applied:
+  - 0001-Remove-script-macro-support.patch
+  - 0002-Update-entities-to-remove-handling-of-ssi.patch
+  - 0003-libxml2.la-is-in-top_builddir.patch
+  - 0004-use-glibc-strlen.patch
+  - 0005-avoid-isnan-isinf.patch
+  - 0006-update-automake-files-for-arm64.patch
+  - 0008-htmlParseComment-handle-abruptly-closed-comments.patch
+  - 0009-allow-wildcard-namespaces.patch
+
+The Nokogiri maintainers intend to provide timely security updates, but if
+this is a concern for you and want to use your OS/distro system library
+instead, then abort this installation process and install nokogiri as
+instructed at:
+
+  https://nokogiri.org/tutorials/installing_nokogiri.html#installing-using-standard-system-libraries
+
+Note, however, that nokogiri cannot guarantee compatibility with every
+version of libxml2 that may be provided by OS/package vendors.
+
+[{:url=>
+   "https://mirror.csclub.uwaterloo.ca/gnome/sources/libxml2/2.9/libxml2-2.9.14.tar.xz",
+  :sha256=>"60d74a257d1ccec0475e749cba2f21559e48139efba6ff28224357c7c798dfee"}]
+Extracting libxml2-2.9.14.tar.xz into tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.14... OK
+Running git apply with /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/patches/libxml2/0001-Remove-script-macro-support.patch... OK
+Running git apply with /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/patches/libxml2/0002-Update-entities-to-remove-handling-of-ssi.patch... OK
+Running git apply with /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/patches/libxml2/0003-libxml2.la-is-in-top_builddir.patch... OK
+Running git apply with /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/patches/libxml2/0004-use-glibc-strlen.patch... OK
+Running git apply with /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/patches/libxml2/0005-avoid-isnan-isinf.patch... OK
+Running git apply with /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/patches/libxml2/0006-update-automake-files-for-arm64.patch... OK
+Running git apply with /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/patches/libxml2/0008-htmlParseComment-handle-abruptly-closed-comments.patch... OK
+Running git apply with /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/patches/libxml2/0009-allow-wildcard-namespaces.patch... OK
+Running 'configure' for libxml2 2.9.14... ERROR, review '/home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/nokogiri-1.13.8/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.14/configure.log' to see what happened. Last lines are:
+========================================================================
+checking whether to enable maintainer-specific portions of Makefiles... yes
+configure: error: cannot run /bin/bash ./config.sub
+========================================================================
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/ubuntu/.rvm/rubies/ruby-3.0.0/bin/$(RUBY_BASE_NAME)
+	--help
+	--clean
+	--prevent-strip
+	--enable-system-libraries
+	--disable-system-libraries
+	--use-system-libraries
+	--enable-system-libraries
+	--disable-system-libraries
+	--use-system-libraries
+	--enable-static
+	--disable-static
+	--enable-cross-build
+	--disable-cross-build
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--with-xml2-source-dir
+/home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/mini_portile2-2.8.0/lib/mini_portile2/mini_portile.rb:460:in `block in execute': Failed to complete configure task (RuntimeError)
+	from /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/mini_portile2-2.8.0/lib/mini_portile2/mini_portile.rb:426:in `chdir'
+	from /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/mini_portile2-2.8.0/lib/mini_portile2/mini_portile.rb:426:in `execute'
+	from /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/mini_portile2-2.8.0/lib/mini_portile2/mini_portile.rb:140:in `configure'
+	from /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/mini_portile2-2.8.0/lib/mini_portile2/mini_portile.rb:186:in `cook'
+	from extconf.rb:529:in `block (2 levels) in process_recipe'
+	from extconf.rb:309:in `chdir'
+	from extconf.rb:309:in `chdir_for_build'
+	from extconf.rb:529:in `block in process_recipe'
+	from <internal:kernel>:90:in `tap'
+	from extconf.rb:428:in `process_recipe'
+	from extconf.rb:774:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/extensions/x86_64-linux/3.0.0/nokogiri-1.13.8/mkmf.log
+
+extconf failed, exit code 1
+>>>>>>> main

@@ -1,0 +1,16 @@
+current directory: /home/ubuntu/Documentos/rails-first-blog/path/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+/home/ubuntu/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/ubuntu/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/path/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220920-16000-22t1wl sitelibdir\=./.gem.20220920-16000-22t1wl clean
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/path/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220920-16000-22t1wl sitelibdir\=./.gem.20220920-16000-22t1wl
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/path/ruby/3.0.0/gems/debug-1.6.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220920-16000-22t1wl sitelibdir\=./.gem.20220920-16000-22t1wl install
+/usr/bin/install -m 0755 debug.so ./.gem.20220920-16000-22t1wl/debug
