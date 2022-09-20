@@ -5,14 +5,26 @@ checking for sys/cdefs.h... yes
 creating Makefile
 
 current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/digest-3.1.0/ext/digest/sha2
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20220920-58143-yc1rz sitelibdir\=./.gem.20220920-58143-yc1rz clean
 
 current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/digest-3.1.0/ext/digest/sha2
 make DESTDIR\= sitearchdir\=./.gem.20220920-58143-yc1rz sitelibdir\=./.gem.20220920-58143-yc1rz
+=======
+make DESTDIR\= sitearchdir\=./.gem.20220920-42374-cuxqnd sitelibdir\=./.gem.20220920-42374-cuxqnd clean
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/digest-3.1.0/ext/digest/sha2
+make DESTDIR\= sitearchdir\=./.gem.20220920-42374-cuxqnd sitelibdir\=./.gem.20220920-42374-cuxqnd
+>>>>>>> main
 compiling sha2init.c
 compiling sha2.c
 linking shared-object digest/sha2.so
 
 current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/digest-3.1.0/ext/digest/sha2
+<<<<<<< HEAD
 make DESTDIR\= sitearchdir\=./.gem.20220920-58143-yc1rz sitelibdir\=./.gem.20220920-58143-yc1rz install
 /usr/bin/install -m 0755 sha2.so ./.gem.20220920-58143-yc1rz/digest
+=======
+make DESTDIR\= sitearchdir\=./.gem.20220920-42374-cuxqnd sitelibdir\=./.gem.20220920-42374-cuxqnd install
+/usr/bin/install -m 0755 sha2.so ./.gem.20220920-42374-cuxqnd/digest
+>>>>>>> main
