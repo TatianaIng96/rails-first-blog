@@ -8,6 +8,8 @@ checking for whether -Wmissing-noreturn is accepted as CFLAGS... yes
 Building nokogiri using packaged libraries.
 Static linking is enabled.
 Cross build is disabled.
+/home/ubuntu/Documentos/rails-first-blog/path/ruby/3.0.0/gems/digest-3.1.0/lib/digest.rb:20: warning: already initialized constant Digest::REQUIRE_MUTEX
+/home/ubuntu/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/digest.rb:6: warning: previous definition of REQUIRE_MUTEX was here
 Using mini_portile version 2.8.0
 checking for iconv... yes
 ---------- IMPORTANT NOTICE ----------
