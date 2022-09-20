@@ -1,0 +1,15 @@
+current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+/home/ubuntu/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/ubuntu/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220920-58143-l5alvb sitelibdir\=./.gem.20220920-58143-l5alvb clean
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220920-58143-l5alvb sitelibdir\=./.gem.20220920-58143-l5alvb
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220920-58143-l5alvb sitelibdir\=./.gem.20220920-58143-l5alvb install
+/usr/bin/install -m 0755 bootsnap.so ./.gem.20220920-58143-l5alvb/bootsnap
