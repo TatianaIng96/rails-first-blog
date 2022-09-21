@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
     if @article.save
       redirect_to @article
     else
-      # Devuelva al navegador un código 422
+      # devuelva al navegador un código 422
       render :new, status: :unprocessable_entity 
     end
   end
@@ -53,3 +53,5 @@ class ArticlesController < ApplicationController
     params.require(:article).permit(:title, :body, :status)
   end
 end
+
+
