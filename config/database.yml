@@ -39,4 +39,3 @@ production:
   username: postgres
   password: <%= ENV['MyDatabase_Password'] %>
   role: MyRole
-
