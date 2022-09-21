@@ -10,8 +10,6 @@
 # gem 'pg'
 #
 
-
-
 development:
   adapter: postgresql
   encoding: unicode
@@ -20,7 +18,6 @@ development:
   pool: 5
   username: postgres
   password: MyPassword
-
 
 test: &TEST
   adapter: postgresql
