@@ -1,0 +1,13 @@
+current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/json-2.6.2/ext/json
+/home/ubuntu/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/ubuntu/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/json-2.6.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20220921-65198-q3i116 sitelibdir\=./.gem.20220921-65198-q3i116 clean
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/json-2.6.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20220921-65198-q3i116 sitelibdir\=./.gem.20220921-65198-q3i116
+make: No se hace nada para 'all'.
+
+current directory: /home/ubuntu/Documentos/rails-first-blog/vendor/ruby/3.0.0/gems/json-2.6.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20220921-65198-q3i116 sitelibdir\=./.gem.20220921-65198-q3i116 install
