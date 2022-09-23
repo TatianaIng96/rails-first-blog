@@ -1,7 +1,7 @@
 <%= form_with model: article do |form| %>
   <div>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <label class="form-label" style="font-size: 12px;"><%= form.label :title %></label> <br>
+    <input class="form-control"><%= form.text_field :title %>
     <% article.errors.full_messages_for(:title).each do |message| %>
       <div><%= message %></div>
     <% end %>
