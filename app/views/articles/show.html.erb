@@ -1,17 +1,17 @@
-<h1><%= @article.title %></h1>
+<h1  class='d-flex justify-content-center'><strong><%= @article.title %></strong></h1>
 
-<p><%= @article.body %></p>
+<p class='d-flex justify-content-center px-5' style="text-align: justify;"><%= @article.body %></p>
 
-<ul>
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Destroy", article_path(@article), data: {
+<ul class="list-inline d-flex justify-content-center">
+  <li class="list-inline-item"><%= link_to "Edit", edit_article_path(@article), class: 'btn btn-primary' %></li>
+  <li class="list-inline-item"><%= link_to "Destroy", article_path(@article), data: {
                     turbo_method: :delete,
                     turbo_confirm: "Are you sure?"
-                  } %></li>
+                  }, class: 'btn btn-danger'%></li>
 </ul>
-
-<h2>Comments</h2>
+<br/><br/>
+<h2 class='d-flex justify-content-center'>Comments</h2>
 <%= render @article.comments %>
-
-<h2>Add a comment:</h2>
+<br/><br/>
+<h2 class='d-flex justify-content-center'>Add a comment:</h2>
 <%= render 'comments/form' %>
