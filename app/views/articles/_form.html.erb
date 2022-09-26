@@ -1,7 +1,7 @@
 <%= form_with model: article do |form| %>
   <div>
-    <%= form.label :title , class: 'd-flex justify-content-center'%>
-    <div><%= form.text_field :title, class: 'form-control mx-auto', style:'width: 15rem;'%> <br></div> 
+    <%= form.label :title , class: 'd-flex justify-content-center' %>
+    <div><%= form.text_field :title, class: 'form-control mx-auto', style:'width: 15rem;' %><br></div> 
     <% article.errors.full_messages_for(:title).each do |message| %>
       <div><%= message %></div>
     <% end %>
@@ -19,9 +19,9 @@
     <button type="submit" class="btn btn-primary mb-3">Crear</button>
   </div>
   <br/>
-  <div class= 'd-flex justify-content-center' >
-  <%= form.label :status %>
-  <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
-  </div>
 
+  <div class= 'd-flex justify-content-center' >
+    <%= form.label :status %>
+    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+  </div>
 <% end %>

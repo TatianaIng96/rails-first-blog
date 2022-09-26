@@ -5,9 +5,9 @@
 <ul class="list-inline d-flex justify-content-center">
   <li class="list-inline-item"><%= link_to "Edit", edit_article_path(@article), class: 'btn btn-primary' %></li>
   <li class="list-inline-item"><%= link_to "Destroy", article_path(@article), data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "Are you sure?"
-                  }, class: 'btn btn-danger'%></li>
+                                              turbo_method: :delete,
+                                              turbo_confirm: "Are you sure?"
+                                            }, class: 'btn btn-danger' %></li>
 </ul>
 <br/><br/>
 <h2 class='d-flex justify-content-center'>Comments</h2>
