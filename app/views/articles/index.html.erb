@@ -1,15 +1,16 @@
-<h1>Articles</h1>
+<h1 class="d-flex px-5 py-3"><strong>Articles<strong></h1>
 
-Our blog has <%= Article.public_count %> articles and counting!
-
-<ul>
-  <% @articles.each do |article| %>
-    <% unless article.archived? %>
-      <li>
-        <%= link_to article.title, article %>
-      </li>
+<div class="card px-3" style="left: 3.7%; width: 60%; background-color: rgba(0,0,0,0.1);">
+  <h4 class="pt-3">Our blog has <%= Article.public_count %> articles and counting!</h4>
+  <ul>
+    <% @articles.each do |article| %>
+      <% unless article.archived? %>
+        <li>
+          <%= link_to article.title, article %>
+        </li>
+      <% end %>
     <% end %>
-  <% end %>
-</ul>
+  </ul>
+</div>
 
-<%= link_to "New Article", new_article_path %>
+
