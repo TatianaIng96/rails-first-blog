@@ -31,5 +31,14 @@
         </li>
       </ul>
     </div>
+       <ul class="navbar-nav mb-2 mb-lg-0">
+        <% if usuario_signed_in? %>
+          <%= link_to current_usuario.email, edit_usuario_registration_path, class: "nav-item nav-link" %>
+          <%= link_to "Sign out", destroy_usuario_session_path, method: :delete, class: "nav-item nav-link" %>
+        <% else %>
+          <%= link_to "Sign up", new_usuario_registration_path, class: "nav-item nav-link" %>
+          <%= link_to "Login", new_usuario_session_path, class: "nav-item nav-link" %>
+        <% end %>
+      </ul>
   </div>
 </nav>
