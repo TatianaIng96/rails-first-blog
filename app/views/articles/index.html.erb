@@ -7,6 +7,7 @@
       <% unless article.archived? %>
         <li>
           <%= link_to article.title, article %>
+          posted by <a> <%= article.user.email%></a>
           
         </li>
       <% end %>
