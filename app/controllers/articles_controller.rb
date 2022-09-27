@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
 
   #Seguridad para añadir un nuevo articulo
   #http_basic_authenticate_with name: "dhh", password: "secret", 
-  before_action :authenticate_usuario!,
+  before_action :authenticate_user!,
   except: [:index, :show]
 
   def index
@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new(article_params)
+    @article = Article.new(article_params.merge(user_id: current_user.id))
 
     if @article.save
       redirect_to @article
@@ -52,5 +52,6 @@ class ArticlesController < ApplicationController
   def article_params
     params.require(:article).permit(:title, :body, :status)
   end
+
 
 end

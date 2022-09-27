@@ -24,4 +24,6 @@
     <%= form.label :status %>
     <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
   </div>
+
+  <h4><%=current_user.id%></h4>
 <% end %>

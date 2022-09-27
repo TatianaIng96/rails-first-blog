@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   
   root "articles#index"
   
@@ -6,7 +7,5 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  devise_for :usuarios do
-    get '/usuarios/sign_out' => 'devise/sessions#destroy'
-  end
+ 
 end
