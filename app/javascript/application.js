@@ -2,4 +2,11 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-import "bootstrap"
+
+import "./popper";
+import "./bootstrap.min";
+
+
+//=require jquery3
+//require popper
+//require bootstrap-sprockets

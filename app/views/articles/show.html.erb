@@ -3,11 +3,17 @@
 <p class='d-flex justify-content-center px-5' style="text-align: justify;"><%= @article.body %></p>
 
 <ul class="list-inline d-flex justify-content-center">
-  <li class="list-inline-item"><%= link_to "Edit", edit_article_path(@article), class: 'btn btn-primary' %></li>
-  <li class="list-inline-item"><%= link_to "Destroy", article_path(@article), data: {
-                                              turbo_method: :delete,
-                                              turbo_confirm: "Are you sure?"
-                                            }, class: 'btn btn-danger' %></li>
+  <% if user_signed_in? %>
+    <% if current_user.id == @article.user_id %>
+      <li class="list-inline-item"><%= link_to "Edit", edit_article_path(@article), class: 'btn btn-primary' %></li>
+      <li class="list-inline-item"><%= link_to "Destroy", article_path(@article), data: {
+                                                  turbo_method: :delete,
+                                                  turbo_confirm: "Are you sure?"
+                                                }, class: 'btn btn-danger' %></li>
+    <% else %>
+    <% end %> 
+  <% else %>
+  <% end %>
 </ul>
 <br/><br/>
 <h2 class='d-flex justify-content-center'>Comments</h2>

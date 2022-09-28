@@ -45,6 +45,7 @@ gem 'rubocop'
 gem "bootsnap", require: false
 
 gem 'bootstrap', '~> 5.2.1'
+gem 'jquery-rails'
 # Use Sass to process CSS
 # gem "sassc-rails"
 

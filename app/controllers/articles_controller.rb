@@ -1,7 +1,5 @@
 class ArticlesController < ApplicationController
 
-  #Seguridad para añadir un nuevo articulo
-  #http_basic_authenticate_with name: "dhh", password: "secret", 
   before_action :authenticate_user!,
   except: [:index, :show]
 
@@ -52,6 +50,4 @@ class ArticlesController < ApplicationController
   def article_params
     params.require(:article).permit(:title, :body, :status)
   end
-
-
 end
