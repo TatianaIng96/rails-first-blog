@@ -2,13 +2,12 @@
   
   <p class='d-flex justify-content-center'>
     <% if user_signed_in? %>
-      Commenter:  
-      <%= current_user.email %> 
+      Commenter: <%= current_user.email %> 
     <% end %>
   </p>
   <p>
-    <%= form.label :body, class:'d-flex justify-content-center'%>
-    <%= form.text_area :body, class: 'form-control mx-auto width-class'%>
+    <%= form.label :body, class:'d-flex justify-content-center' %>
+    <%= form.text_area :body, class: 'form-control mx-auto wh-form-text-area' %>
   </p>
   <p class= 'd-flex justify-content-center' >
     <button type="submit" class="btn btn-primary mb-3">Crear</button>
