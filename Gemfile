@@ -21,6 +21,7 @@ gem "importmap-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
+gem 'devise'
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
@@ -44,6 +45,7 @@ gem 'rubocop'
 gem "bootsnap", require: false
 
 gem 'bootstrap', '~> 5.2.1'
+gem 'jquery-rails'
 # Use Sass to process CSS
 # gem "sassc-rails"
 

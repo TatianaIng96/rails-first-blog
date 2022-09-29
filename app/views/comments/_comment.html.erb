@@ -1,19 +1,23 @@
 <% unless comment.archived? %>
   <br/>
   <p class='d-flex justify-content-center'>
-    <strong>Commenter: </strong>
-    <%= comment.commenter %>
+    <strong>Commenter:</strong>
+    <%= comment.user.email %>
   </p>
 
   <p class='d-flex justify-content-center'>
     <strong>Comment:</strong>
     <%= comment.body %>
   </p>
-
+  
   <p class='d-flex justify-content-center'>
-    <%= link_to  "Destroy Comment", [comment.article, comment], data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "Are you sure?"
-                  }, class: 'btn btn-danger'%>
+    <% if user_signed_in? %>
+      <% if current_user.id == comment.user_id %>
+        <%= link_to  "Destroy Comment", [comment.article, comment], data: {
+                        turbo_method: :delete,
+                        turbo_confirm: "Are you sure?"
+                      }, class: 'btn btn-danger'%>
+      <% end %>
+    <% end %>
   </p>
 <% end %>
