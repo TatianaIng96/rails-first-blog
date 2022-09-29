@@ -4,7 +4,6 @@ import "controllers"
 import "./popper"
 import "./bootstrap.min"
 
-
 //=require jquery3
 //require popper
 //require bootstrap-sprockets
