@@ -2,7 +2,7 @@
   <br/>
   <p class='d-flex justify-content-center'>
     <strong>Commenter: </strong>
-    <%= comment.commenter %>
+    <%= comment.user.email%>
   </p>
 
   <p class='d-flex justify-content-center'>
@@ -12,13 +12,12 @@
   
   <p class='d-flex justify-content-center'>
     <% if user_signed_in? %>
-      <%if current_user.id == comment.user_id %>
+      <% if current_user.id == comment.user_id %>
         <%= link_to  "Destroy Comment", [comment.article, comment], data: {
                         turbo_method: :delete,
                         turbo_confirm: "Are you sure?"
                       }, class: 'btn btn-danger'%>
-        <% else%> 
-      <%end %>
+      <% end %>
     <% else %>
     <% end %>
   </p>
