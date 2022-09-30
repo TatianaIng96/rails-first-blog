@@ -39,6 +39,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+    puts (current_user.id)
     @article = Article.find(params[:id])
     @article.destroy
 
