@@ -6,10 +6,9 @@
   <% if user_signed_in? %>
     <% if current_user.id == @article.user_id %>
       <li class="list-inline-item"><%= link_to "Edit", edit_article_path(@article), class: 'btn btn-primary' %></li>
-      <li class="list-inline-item"><%= link_to "Destroy", article_path(@article), data: {
-                                                  turbo_method: :delete,
-                                                  turbo_confirm: "Are you sure?"
-                                                }, class: 'btn btn-danger' %></li>
+      <%= form_with url: article_path(@article), method: :delete, id: 'delete_article_form' do |form| %>
+        <%= form.button 'Delete', class: 'btn btn-primary' %>
+      <% end %>
     <% end %> 
   <% end %>
 </ul>
