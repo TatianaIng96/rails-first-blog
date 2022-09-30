@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
     @comment = @article.comments.find(params[:id])
     @comment.destroy
     
-    redirect_to article_path(@article), status: :see_other
+    redirect_to article_path(@article)
   end
 
   private
