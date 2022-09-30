@@ -3,6 +3,7 @@ class CommentsController < ApplicationController
   before_action :authenticate_user!
   
   def create
+    puts ("Testing destroy")
     @article = Article.find(params[:article_id]) # busca el articulo asociado
     @comment = @article.comments.create(comment_params.merge(user_id: current_user.id)) #crea y guarda el comentarioaccedoo a todos los comentarios de ese articulo
     

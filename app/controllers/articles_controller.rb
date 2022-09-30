@@ -25,6 +25,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    puts ("Testing destroy")
     @article = Article.find(params[:id])
   end
 
