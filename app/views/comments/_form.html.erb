@@ -1,37 +1,17 @@
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
-
-  <% @user = @article.user %>
-  <% if user_signed_in? and current_user.following?(@user) %>
-    <h2 class='d-flex justify-content-center'>Add a comment:</h2>
-    <p class='d-flex justify-content-center'>
-      Commenter: <%= current_user.email %> 
-    </p>
-    <p>
-      <%= form.label :body, class:'d-flex justify-content-center' %>
-      <%= form.text_area :body, class: 'form-control mx-auto wh-form-text-area' %>
-    </p>
-    <p class= 'd-flex justify-content-center' >
-      <button type="submit" class="btn btn-primary mb-3">Crear</button>
-    </p>
-    <p class= 'd-flex justify-content-center'>
-      <%= form.label :status %><br>
-      <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
-    </p>
-  <% elsif user_signed_in? and current_user== @user %>
-    <p class='d-flex justify-content-center'>
-      Commenter: <%= current_user.email %> 
-    </p>
-    <p>
-      <%= form.label :body, class:'d-flex justify-content-center' %>
-      <%= form.text_area :body, class: 'form-control mx-auto wh-form-text-area' %>
-    </p>
-    <p class= 'd-flex justify-content-center' >
-      <button type="submit" class="btn btn-primary mb-3">Crear</button>
-    </p>
-
-    <p class= 'd-flex justify-content-center'>
-      <%= form.label :status %><br>
-      <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
-    </p>
-  <% end %>
+ 
+  <p class='d-flex justify-content-center'>
+    Commenter: <%= current_user.email %> 
+  </p>
+  <p>
+    <%= form.label :body, class:'d-flex justify-content-center' %>
+    <%= form.text_area :body, class: 'form-control mx-auto wh-form-text-area' %>
+  </p>
+  <p class= 'd-flex justify-content-center' >
+    <button type="submit" class="btn btn-primary mb-3">Create</button>
+  </p>
+  <p class= 'd-flex justify-content-center'>
+    <%= form.label :status %><br>
+    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+  </p>
 <% end %>

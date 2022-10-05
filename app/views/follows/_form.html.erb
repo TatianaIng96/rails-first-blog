@@ -1,14 +1,13 @@
 <% @user = @article.user %>
-<% unless @user== current_user %>
-  <div class="d-flex justify-content-center">
-      <% if user_signed_in? %>
-          <% unless @user == current_user %>
-              <% if current_user.following?(@user) %>
-                <%= link_to "Unfollow", unfollow_article_path(@user.id,@article), method: :delete, class: 'btn btn-primary' %>
-              <% else %>
-                <%= link_to "follow", follow_article_path(@user.id,@article),method: :post, class: 'btn btn-primary' %>
-              <% end %>
-          <% end %>
+<div class="d-flex justify-content-center">
+  <% if user_signed_in? %>
+    <% unless @user == current_user %>
+      <% if current_user.following?(@user) %>
+        <%= link_to "Unfollow", unfollow_article_path(@user.id,@article), method: :delete, class: 'btn btn-primary' %>
+      <% else %>
+        <%= link_to "follow", follow_article_path(@user.id,@article), method: :post, class: 'btn btn-primary' %>
       <% end %>
-  </div>
-<% end %>
+    <% end %>
+  <% end %>
+</div>
+
