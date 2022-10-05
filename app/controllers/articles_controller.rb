@@ -43,7 +43,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @article.destroy
 
-    redirect_to @article
+    redirect_to root_path
   end
   
   def follow
