@@ -5,5 +5,9 @@ Rails.application.routes.draw do
   
   resources :articles do 
     resources :comments
+    member do
+      get :follow
+      get :unfollow
+    end
   end 
 end

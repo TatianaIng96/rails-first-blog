@@ -25,7 +25,6 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    puts ("Testing destroy")
     @article = Article.find(params[:id])
   end
 
@@ -47,6 +46,20 @@ class ArticlesController < ApplicationController
     redirect_to root_path
   end
   
+  def follow
+    user = User.find_by(id: params[:id])
+    current_user.follow(user)
+
+    redirect_to request.referrer
+  end
+  
+  def unfollow
+    user = User.find_by(id: params[:id])
+    current_user.stop_following(user) 
+    
+    redirect_to request.referrer
+  end
+
   private
   def article_params
     params.require(:article).permit(:title, :body, :status)

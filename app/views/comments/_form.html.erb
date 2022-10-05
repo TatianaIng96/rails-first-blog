@@ -1,18 +1,15 @@
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
-  
+ 
   <p class='d-flex justify-content-center'>
-    <% if user_signed_in? %>
-      Commenter: <%= current_user.email %> 
-    <% end %>
+    Commenter: <%= current_user.email %> 
   </p>
   <p>
     <%= form.label :body, class:'d-flex justify-content-center' %>
     <%= form.text_area :body, class: 'form-control mx-auto wh-form-text-area' %>
   </p>
   <p class= 'd-flex justify-content-center' >
-    <button type="submit" class="btn btn-primary mb-3">Crear</button>
+    <button type="submit" class="btn btn-primary mb-3">Create</button>
   </p>
-
   <p class= 'd-flex justify-content-center'>
     <%= form.label :status %><br>
     <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>

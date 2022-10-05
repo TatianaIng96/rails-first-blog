@@ -1,7 +1,10 @@
-<h1  class='d-flex justify-content-center'><strong><%= @article.title %></strong></h1>
-
-<p class='d-flex justify-content-center px-5' style="text-align: justify;"><%= @article.body %></p>
-
+<% render 'follows/form' %> 
+<h4 class="d-flex justify-content-end align-self-end"> 
+  Author: &nbsp;&nbsp;&nbsp; <%=@user.email%> &nbsp;&nbsp;&nbsp;
+  <%= render 'follows/form' %> 
+</h4> <br/><br/>
+<h1 class='d-flex justify-content-center'><strong><%= @article.title %></strong></h1>
+<p class='d-flex justify-content-center px-5' style="text-align: justify;"> <%= @article.body %></p>
 <ul class="list-inline d-flex justify-content-center">
   <% if user_signed_in? %>
     <% if current_user.id == @article.user_id %>
@@ -16,5 +19,8 @@
 <h2 class='d-flex justify-content-center'>Comments</h2>
 <%= render @article.comments %>
 <br/><br/>
-<h2 class='d-flex justify-content-center'>Add a comment:</h2>
-<%= render 'comments/form' %>
+<% @user = @article.user %>
+<% if user_signed_in? and (current_user.following?(@user) or current_user == @user) %>
+  <h2 class='d-flex justify-content-center'>Add a comment:</h2>
+  <%= render 'comments/form' %>
+<% end %>
